@@ -11,7 +11,7 @@ for (let i = 0; i < number.length; i++) {
 	number[i].addEventListener("click", function (e) {
 		
 		let currentString = input.innerHTML,
-			lastChar 	  = currentString[currentString.length - 1];
+			lastChar  = currentString[currentString.length - 1];
 		
 		if (resultDisplayed === false){
 			input.innerHTML += e.target.innerHTML;
