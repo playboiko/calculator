@@ -39,14 +39,14 @@ for (let i = 0; i < operator.length; i++) {
 	operator[i].addEventListener("click", function (e) {
 		
 		let currentString = input.innerHTML,
-			lastChar 	  = currentString[currentString.length - 1];
+			lastChar  = currentString[currentString.length - 1];
 		
 		if (lastChar === "+"
 			|| lastChar === "-"
 			|| lastChar === "*"
 			|| lastChar === "÷") {
 			
-			let newString = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
+			let newString   = currentString.substring(0, currentString.length - 1) + e.target.innerHTML;
 			input.innerHTML = newString;
 			
 		} else {
@@ -58,7 +58,7 @@ for (let i = 0; i < operator.length; i++) {
 result.addEventListener("click", function () {
 	
 	let inputString = input.innerHTML,
-		numbers		= inputString.split(/\+|\-|\×|\÷/g),
+		numbers	    = inputString.split(/\+|\-|\×|\÷/g),
 		operators   = inputString.replace(/[0-9]|\./g, "").split("");
 	
 	let divide = operators.indexOf("÷");
