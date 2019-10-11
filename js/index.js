@@ -1,6 +1,6 @@
 "use strict";
 
-let input 			= document.getElementById('input'),
+let     input 			= document.getElementById('input'),
 	number 			= document.querySelectorAll('.numbers div'),
 	operator		= document.querySelectorAll('.operators div'),
 	result			= document.getElementById('result'),
